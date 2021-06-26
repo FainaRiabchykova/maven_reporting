@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="2" preserve-order="true" name="C:\Users\HP\IdeaProjects\maven_reporting">
+    <listeners>
+        <listener class-name="com.ria.services.TestListener"/>
+    </listeners>
+    <test name="RiaTest">
+        <classes>
+            <class name="com.ria.tests.ComponentTest">
+                <methods>
+                    <include name="checkSaveDraftsInGmail"/>
+                    <include name="testFail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
